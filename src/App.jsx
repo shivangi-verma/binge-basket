@@ -6,16 +6,14 @@ import Movie from "./components/Movie";
 import TvShow from "./components/TvShow";
 import MyBasket from "./components/MyBasket";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 
-import { BasketProvider } from "./BasketContext"; // Import BasketProvider
+import { BasketProvider } from "./BasketContext";
 
 function App() {
   return (
     <Router>
       <BasketProvider>
-        {" "}
-        {/* Wrap the entire application with BasketProvider */}
         <div>
           <Navbar />
           <Routes>
